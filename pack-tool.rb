@@ -19,7 +19,7 @@ parametro = ARGV[0]
    FileUtils.rm_rf('../Pack-Tool')
    Dir.chdir('../')
    system("git clone https://github.com/BreakerBox/Pack-Tool.git")
-   Dir.chdir('../Pack-Tool')
+   Dir.chdir('./Pack-Tool')
    puts "Se ah clonado el repositorio actualizado en:"
    puts Dir.pwd
  elsif
