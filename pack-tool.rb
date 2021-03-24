@@ -17,6 +17,7 @@ parametro = ARGV[0]
    sos()
  elsif (parametro == "-u" || parametro == "--update")
    FileUtils.rm_rf('../Pack-Tool')
+   Dir.chdir('../')
    system("git clone https://github.com/BreakerBox/Pack-Tool.git")
    Dir.chdir('../Pack-Tool')
    puts "Se ah clonado el repositorio actualizado en:"
