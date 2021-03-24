@@ -28,6 +28,7 @@ require "paint"
       #system("gem install fileutils 2>/dev/null")
       #system("gem install lolcat 2>/dev/null")
       #system("gem install base64 2>/dev/null")
+      #system("gem install git 2>/dev/null")
     puts
     sleep 3
     system("clear")

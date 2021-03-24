@@ -1,16 +1,24 @@
-Esta es una herramienta programada por Breaker OS con el
-fin
-de auto motizar termux, y no les sea dificil 
+#Pack-Tool
+Es una multi herramienta para termux
+que te sirve de mucho
 
-Esta herramienta fue inspirada por Pack-Tool en la cuenta
-anterior mia https://github.com/chicotermux/ pero estaba 
-programada en bash, entonces preferi hacer un nuevo
-proyecto en ruby para tener mas oportunidad en hacer un
- proyecto grande 
+#instalacion Pack-Tool
 
-Espero que les halla gustado 
+$ apt update
 
-Cualquier error avisan a este numero +53 56144937
+$ apt upgrade
 
-Esta herramienta esta en total desarrolo, no se preocupe
-si le da un error o le falta
+$ apt install git
+
+$ apt install ruby
+
+$ git clone https://github.com/BreakerBox/Pack-Tool.git/
+
+$ cd Pack-Tool
+
+$ ruby install.rb
+
+#Errores
+
+Si hay algun error contactar con
+este numero: +53 56144937
