@@ -1,6 +1,6 @@
 require 'paint'
 require 'fileutils'
-
+require 'git'
 def sos()
 puts "
      -h, --help       command to view help parameters
@@ -18,7 +18,7 @@ parametro = ARGV[0]
  elsif (parametro == "-u" || parametro == "--update")
    FileUtils.rm_rf('../Pack-Tool')
    Dir.chdir('../')
-   system("git clone https://github.com/BreakerBox/Pack-Tool.git")
+   Git.clone('https://github.com/BreakerBox/Pack-Tool', 'Pack-Tool')
    Dir.chdir('./Pack-Tool')
    puts "Se ah clonado el repositorio actualizado en:"
    puts Dir.pwd
