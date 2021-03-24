@@ -19,9 +19,10 @@ parametro = ARGV[0]
    FileUtils.rm_rf('../Pack-Tool')
    Dir.chdir('../')
    Git.clone('https://github.com/BreakerBox/Pack-Tool', 'Pack-Tool')
-   Dir.chdir('./Pack-Tool')
-   puts "Se ah clonado el repositorio actualizado en:"
+   puts "the repository has been cloned in this path:"
    puts Dir.pwd
+   Dir.chdir('./Pack-Tool')
+   system('cd ../Pack-Tool')
  elsif
    (parametro == "-i" || parametro == "--interface")
   system("ruby .tools/shell.rb")
