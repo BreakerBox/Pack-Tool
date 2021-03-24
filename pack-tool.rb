@@ -22,13 +22,12 @@ parametro = ARGV[0]
    puts "the repository has been cloned in this path:"
    puts Dir.pwd
    Dir.chdir('./Pack-Tool')
-   system('cd ../Pack-Tool')
  elsif
    (parametro == "-i" || parametro == "--interface")
   system("ruby .tools/shell.rb")
  elsif (parametro == "-n" || parametro == "--uninstall")
    FileUtils.rm_rf('../Pack-Tool')
-   puts Paint['Pack-Tool ah sido borrado perfectamente', :green, :underline]
+   puts Paint['Pack-Tool has been perfectly erased', :green, :underline]
  elsif parametro.nil?
 puts "
 #{Paint["lack of arguments", :red]}, #{Paint["use --help", :green]}
