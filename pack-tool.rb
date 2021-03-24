@@ -16,7 +16,11 @@ parametro = ARGV[0]
  if (parametro == "-h" || parametro == "--help")
    sos()
  elsif (parametro == "-u" || parametro == "--update")
-   puts "en proceso"
+   FileUtils.rm_rf('../Pack-Tool')
+   system("git clone https://github.com/BreakerBox/Pack-Tool.git")
+   Dir.chdir('../Pack-Tool')
+   puts "Se ah clonado el repositorio actualizado en:"
+   puts Dir.pwd
  elsif
    (parametro == "-i" || parametro == "--interface")
   system("ruby .tools/shell.rb")
