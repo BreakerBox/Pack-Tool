@@ -16,15 +16,15 @@ parametro = ARGV[0]
  if (parametro == "-h" || parametro == "--help")
    sos()
  elsif (parametro == "-u" || parametro == "--update")
-   FileUtils.rm_rf('../Pack-Tool')
-   Dir.chdir('../')
-   Git.clone('https://github.com/BreakerBox/Pack-Tool', 'Pack-Tool')
-   puts "the repository has been cloned in this path:"
+ #  FileUtils.rm_rf('../Pack-Tool')
+ #  Dir.chdir('../')
+#   Git.clone('https://github.com/BreakerBox/Pack-Tool', 'Pack-Tool')
+   puts "\e[1;32mthe repository has been cloned in this path:\e[0m"
    puts Dir.pwd
-   Dir.chdir('./Pack-Tool')
+ #  Dir.chdir('./Pack-Tool')
  elsif
    (parametro == "-i" || parametro == "--interface")
-  system("ruby .tools/shell.rb")
+  system("ruby .sh/shell.rb")
  elsif (parametro == "-n" || parametro == "--uninstall")
    FileUtils.rm_rf('../Pack-Tool')
    puts Paint['Pack-Tool has been perfectly erased', :green, :underline]
