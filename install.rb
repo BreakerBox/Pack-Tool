@@ -52,7 +52,7 @@ require "paint"
   def noinstall()
    puts
    puts Paint['[✘] operation cancelled', :red, :underline]
-   exit
+    exit
   end
   while true
    inicio()
