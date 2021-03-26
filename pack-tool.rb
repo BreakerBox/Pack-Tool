@@ -2,13 +2,20 @@ require 'paint'
 require 'fileutils'
 require 'git'
 def sos()
-puts "
+puts '
+       ____            _       _____           _
+      |  _ \ __ _  ___| | __  |_   _|__   ___ | |
+      | |_) / _` |/ __| |/ /____| |/ _ \ / _ \| |
+      |  __/ (_| | (__|   <_____| | (_) | (_) | |
+      |_|   \__,_|\___|_|\_\    |_|\___/ \___/|_|v0.1
+
+
      -h, --help       command to view help parameters
      -u, --update      update tool
      -i, --interface   enter the Pack-Tool interface
 
      -n, -uninstall    uninstall tool and delete repository
-  "
+  '
 end
 #sos()
 parametro = ARGV[0]
